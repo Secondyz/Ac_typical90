@@ -38,7 +38,6 @@ func main() {
 		return jobs[i].D < jobs[j].D
 	})
 
-	// その日まで締め切りの報酬の和の最大値
 	dp := make([]int, maxDay+1)
 
 	for _, job := range jobs {
